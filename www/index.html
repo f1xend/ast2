@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+<head>
+
+    <title>Бюджет Астраханской области</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" type="text/css" href="lib/appframework/icons.css" />
+    <link rel="stylesheet" type="text/css" href="lib/appframework/af.ui.css" />
+
+    <script type="text/javascript" charset="utf-8" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/fastclick.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/appframework/appframework.ui.min.js"></script>
+        
+    <script src='cordova.js'></script>
+        
+    <icon platform="android" src="pkg/android/icon-ldpi.png" density="ldpi" width="36" height="36" />
+    <icon platform="android" src="pkg/android/icon-mdpi.png" density="mdpi" width="48" height="48" />
+    <icon platform="android" src="pkg/android/icon-hdpi.png" density="hdpi" width="72" height="72" />
+    <icon platform="android" src="pkg/android/icon-xhdpi.png" density="xhdpi" width="96" height="96" />
+
+    <style> 
+      
+    </style>
+
+</head>
+
+<body>
+    <div id="splashscreen" class='ui-loader heavy'>
+        Бюджет Астраханской области
+        <br>
+        <br>
+        <span class='ui-icon ui-icon-loading spin'></span>
+        <h1>Загрузка...</h1>
+    </div>
+
+    <div class="view splitview" style='background-color: #599ee0'>
+        
+        <header>
+            <a class="menuButton" data-left-menu="left" data-transition="cover" style="float:left"></a>
+            <h1>Бюджет Астраханской области</h1>
+        </header>
+        
+        <div class="pages">
+            <div class="panel" id="main" data-title="Главная" data-selected="true" style='background-color: #ECF0F1'>
+                <!-- CONTENT BLOCK -->
+                <br>
+                <div style='background-color: #FFFFFF'>
+                    <br>
+                    <div style='width: 90%; margin-left: 5%;margin-right: 5%;'>
+                        <br><h1 style='color: #2C3E50;'>Сколько составляет размер бюджета</h1><br>
+                        <img src='main_1.jpg' style='width: 100%; height: 300px;'>
+                    <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                    В 2015 году бюджет Астраханской области составляет 35 472,3 млн. рублей при расходах в 38 236,9 млн. рублей<br>
+
+                    В 2016 году планируется 41 408,3 млн. рублей при расходах в 36 910,6 млн. рублей
+                        <br>
+                    А в 2017 году бюджет должен достигнуть отметки в 40 743,3 млн. рублей при расходах в 35 836,9 млн. рублей.<br>
+                    </p>
+                    </div>
+                    <br>
+                </div>
+                <!-- END CONTENT BLOCK -->
+                
+                <!-- CONTENT BLOCK -->
+                <br>
+                <div style='background-color: #FFFFFF'>
+                    <br>
+                    <div style='width: 90%; margin-left: 5%;margin-right: 5%;'>
+                        <br><h1 style='color: #2C3E50;'>В каком состоянии бюджет</h1><br>
+                        <img src='main_2.jpg' style='width: 100%; height: 300px;'>
+                    <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                    Доход на 2015 год составляет 43568,2 млн. руб., из них 8095,9 млн. руб. бюджет Муниципальных образований (МО), а 35472,3 млн. руб. бюджет области.<br>
+                    Расходы 46 619,1 млн. руб., из них 8382,1 млн. руб. бюджет МО, а 38236,9 млн. руб. бюджет области.<br>
+                    Из этих цифр можно сделать вывод, что на данный момент наша область испытывает дефицит бюджета, но двигаясь по заданному курсу к 2017 году доходы АО превысят расходы на 5 млн. рублей.
+                    </p>
+                    </div>
+                    <br>
+                </div>
+                <!-- END CONTENT BLOCK -->
+                
+                 <!-- CONTENT BLOCK -->
+                <br>
+                <div style='background-color: #FFFFFF'>
+                    <br>
+                    <div style='width: 90%; margin-left: 5%;margin-right: 5%;'>
+                        <br><h1 style='color: #2C3E50;'>Какие районы и в каком количестве получают областной бюджет?</h1><br>
+                        <img src='main_3.jpg' style='width: 100%; height: 300px;'>
+                    <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                    </p>
+                    </div>
+                    <br>
+                </div>
+                <!-- END CONTENT BLOCK -->
+                
+                
+            </div>
+            <div class="panel" id="education" data-title="Расходы: Образование" style='background-color: #ECF0F1'>
+                 <!-- CONTENT BLOCK -->
+                <br>
+                <div style='background-color: #FFFFFF'>
+                    <br>
+                    <div style='width: 90%; margin-left: 5%;margin-right: 5%;'>
+                        <br><h1 style='color: #2C3E50;'>Образование</h1><br>
+                    <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                    Образование далеко не самый последний пункт расходов нашей области:<br>
+                    Выплаты стипендий и других форм материальной поддержки<br>
+                               
+                    </p><br>
+                    <ul style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                        <li>Организация питания  в образовательных организациях Астраханской области</li>
+                        <li>Контроль качества образования, лицензирование и государственная аккредитация</li>
+                        <li>Приобретение учебников и учебных пособий для образовательных организаций</li>
+                    </ul> <br>
+                    <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                    В астраханской области существует Государственная программа «Развитие образования в Астраханской области»<br>
+                        В общем в 2015 году на сферу образования планируется потратить 9 401 млн. руб. из бюджета Астраханской области<br><br>
+                        Подробнее: <a href= "http://minobr.astrobl.ru">minobr.astrobl.ru</a>
+                    </p>
+                    </div>
+                    <br>
+                </div>
+                <!-- END CONTENT BLOCK -->                
+            </div>
+            <div class="panel" id="health" data-title="Расходы: Здравохранение" style='background-color: #ECF0F1'>
+               <!-- CONTENT BLOCK -->
+                <br>
+                <div style='background-color: #FFFFFF'>
+                    <br>
+                    <div style='width: 90%; margin-left: 5%;margin-right: 5%;'>
+                        <br><h1 style='color: #2C3E50;'>Здравоохранение</h1><br>
+                    <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                    Показатель общих расходов на здравоохранение на душу населения является одним из основных индикаторов качества системы здравоохранения в критериях оценки Всемирной организации здравоохранения (ВОЗ).<br>
+                   Общие расходы на здравоохранение определяются как сумма трех составляющих:<br>
+                    </p><br>
+                    <ul style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                        <li>расходы системы социального обеспечения на здравоохранение как часть от общих государственных расходов</li>
+                        <li>платные медицинские услуги, оплачиваемые за счет пациента</li>
+                        <li>платные медицинские услуги, оплачиваемые через систему медицинского страхования (обязательное и добровольное медицинское страхование)</li>
+                    </ul><br>
+                    <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                        Согласно закону Астраханской области от 9 декабря 2014 года N 81/2014-ОЗ «О БЮДЖЕТЕ АСТРАХАНСКОЙ ОБЛАСТИ НА 2015 ГОД И НА ПЛАНОВЫЙ ПЕРИОД 2016 И 2017 ГОДОВ» объем бюджетных ассигнований на здравоохранение планируется в размере 6765,7 млн. руб.<br>
+                        Основные акценты внимания будут уделяться:
+                    </p><br>
+                        <ul style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                            <li>укрепление материально-технической базы медицинских организаций</li>
+                            <li>оказание отдельным категориям граждан помощи по обеспечению лекарственными препаратами</li>
+                            <li>обязательное медицинское страхование неработающего населения</li>
+                            <li>обеспечение деятельности государственных медицинских учреждений Астраханской области </li>
+                        </ul><br>
+                        <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'> Подробнее: <a href= " http://www.minzdravao.ru">minzdravao.ru</a>
+                        </p>
+                    </div>
+                    <br>
+                </div>
+                <!-- END CONTENT BLOCK -->  
+            </div>
+            <div class="panel" id="jkh" data-title="Расходы: ЖКХ" style='background-color: #ECF0F1'>
+                <!-- CONTENT BLOCK -->
+                <br>
+                <div style='background-color: #FFFFFF'>
+                    <br>
+                    <div style='width: 90%; margin-left: 5%;margin-right: 5%;'>
+                        <br><h1 style='color: #2C3E50;'>ЖКХ</h1><br>
+                    <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                   Жилищно-коммунальное хозяйство (ЖКХ) — комплекс отраслей экономики, обеспечивающий функционирование инженерной инфраструктуры различных зданий в населённых пунктах, создающий удобства и комфортабельность проживания и нахождения в них людей путём предоставления им широкого спектра услуг. Включает в себя также объекты социальной инфраструктуры для обслуживания жителей.
+                    </p><br>
+                    <ul style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                        <li>Энергоснабжение: электроснабжение — обеспечение поставки электричества; газоснабжение — обеспечение поставки газа; теплоснабжение — обеспечение поставки горячей воды и тепла, обеспечение работы котельных и ТЭЦ; энергосбережение.</li>
+                        <li>Водоснабжение и водоотведение: водопровод — прокладка и ремонт водопроводных труб, водозабор очистка и доставка воды в многоквартирные дома и на промышленные объекты, в том числе для последующего подогрева для нужд горячего водоснабжения и отопления; канализация — отведение сточных вод.</li>
+                        <li>Вентиляция и централизованное кондиционирование воздуха.</li>
+                        <li>Лифтовое хозяйство.</li>
+                        <li>Слаботочные сети (системы коммуникации и контроля): радиотрансляционная сеть; телевизионная антенна и кабель; телефонная сеть; компьютерная сеть; домофон; видеонаблюдение в местах общего пользования; технические средства вневедомственной охраны.</li>
+                        <li>Вывоз мусора: мусоропровод; утилизация и переработка отходов.</li>
+                        <li>Молниезащита здания.</li>
+                        <li>Системы пожарной безопасности (пожарная лестница, сигнализация, средства пожаротушения)</li>
+                        <li>Капитальный ремонт зданий.</li>
+                        <li>Текущий ремонт внутренних общедомовых инженерных коммуникаций и систем (здания).</li>
+                        <li>Текущая уборка и санитарно-эпидемиологическая обработка мест общего пользования (в том числе дератизация и дезинсекция).</li>
+                        <li>Содержание придомовых территорий (благоустройство).</li>
+                    </ul><br>
+                        <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                            Согласно закону Астраханской области от 09.12. 2014 № 81/2014-ОЗ «О бюджете Астраханской области на 2015 год и на плановый период 2016-2017 годов» на ЖКХ тратится 4% из регионального бюджета.<br><br>
+                        Подробнее: <a href="http://zhkh.astrobl.ru/">zhkh.astrobl.ru</a> 
+                        </p>
+                    </div>
+                    <br>
+                </div>
+                <!-- END CONTENT BLOCK -->
+            </div>
+            <div class="panel" id="ndfl" data-title="Доходы: НДФЛ" style='background-color: #ECF0F1'>
+            <!-- CONTENT BLOCK -->
+                <br>
+                <div style='background-color: #FFFFFF'>
+                    <br>
+                    <div style='width: 90%; margin-left: 5%;margin-right: 5%;'>
+                        <br><h1 style='color: #2C3E50;'>НДФЛ</h1><br>
+                    <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                    Налог на доходы физических лиц (НДФЛ) — основной вид прямых налогов. Исчисляется в процентах от совокупного дохода физических лиц за вычетом документально подтверждённых расходов, в соответствии с действующим законодательством. Если физическое лицо является налоговым резидентом РФ, большинство его доходов будет облагаться по налоговой ставке в размере 13%. К таким доходам, например, относится заработная плата, вознаграждения по гражданско-правовым договорам, доходы от продажи имущества, а также некоторые иные доходы.<br><br>
+                    Подробнее: <a href="https://www.nalog.ru/rn30/taxation/taxes/ndfl/">nalog.ru</a>
+                    </p>
+                    </div>
+                    <br>
+                </div>
+                <!-- END CONTENT BLOCK -->  
+            </div>
+            <div class="panel" id="usn" data-title="Доходы: УСН" style='background-color: #ECF0F1'>
+                 <!-- CONTENT BLOCK -->
+                <br>
+                <div style='background-color: #FFFFFF'>
+                    <br>
+                    <div style='width: 90%; margin-left: 5%;margin-right: 5%;'>
+                        <br><h1 style='color: #2C3E50;'>УСН</h1><br>
+                    <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                    Юридические лица, а также индивидуальные предприниматели, начинающие свою профессиональную коммерческую деятельность, могут выбрать один из двух вариантов системы налогообложения: общую либо упрощенную.<br>
+                        Упрощенная система налогообложения (УСН) – это один из налоговых режимов, который подразумевает особый порядок уплаты налогов и ориентирован на представителей малого и среднего бизнеса.<br>
+                        Для применения УСН необходимо выполнение определенных условий:<br>
+                    </p><br>
+                    <ul style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                        <li>Сотрудников меньше 100 человек </li>    
+                        <li>Доход меньше 60млн.руб. </li>
+                        <li>Остаточная стоимость меньше 100млн. руб.</li>
+                    </ul><br><br>
+                        <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                            СТАВКИ И ПОРЯДОК РАСЧЕТА<br><br>
+                            Расчет налога производится по следующей формуле :<br>
+                            Сумма налога = Ставка налога * Налоговая база<br><br>
+                            Подробнее: <a href="https://www.nalog.ru/rn30/taxation/taxes/usn/">nalog.ru</a>
+                        </p>
+                    </div>
+                    <br>
+                </div>
+                <!-- END CONTENT BLOCK -->  
+            </div>
+            <div class="panel" id="auto" data-title="Доходы: Транспортный налог" style='background-color: #ECF0F1'>
+                <!-- CONTENT BLOCK -->
+                <br>
+                <div style='background-color: #FFFFFF'>
+                    <br>
+                    <div style='width: 90%; margin-left: 5%;margin-right: 5%;'>
+                        <br><h1 style='color: #2C3E50;'>ТРАНСПОРТНЫЙ НАЛОГ</h1><br>
+                    <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                    Порядок, ставки и сроки уплаты транспортного налога в Астраханской области на 2015 г. установлены Законом Астраханской области от 22.11.2002 № 49/2002-ОЗ «О транспортном налоге» (с соответствующими изменениями, действующим в 2015 г.). Он распространяется на все города области. Административный центр – Астрахань.<br></p>
+                       <br><h1 style='color: #2C3E50;'>Порядок и сроки уплаты транспортного налога в Астраханской области</h1><br>
+                    <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
+                        Уплата налога производится налогоплательщиками-организациями ежегодно по месту нахождения транспортных средств по итогам каждого отчетного периода.<br>
+                        Уплата авансового платежа по налогу производится не позднее последнего числа месяца, следующего за истекшим отчетным периодом. Уплата налога производится не позднее 10 февраля года, следующего за истекшим налоговым периодом.<br>
+                        Физическими лицами транспортный налог должен быть уплачен в общем порядке в срок не позднее 1 октября года, следующего за истекшим налоговым периодом.<br><br>
+                        Подробнее: <a href="https://www.nalog.ru/rn30/taxation/taxes/tr_ul/transport_fl/">nalog.ru</a>
+                    </p><br>
+                    </div>
+                    
+                </div>
+                <!-- END CONTENT BLOCK -->  
+            </div>
+        </div>
+
+        <nav id="left">
+            <div class="view active">
+                <header style='background-color: #599ee0'>
+                    <h1>Категории</h1>
+                </header>
+                <div class="pages" style='background-color: #599ee0'>
+                    <div class="panel active" id="navPage1" data-title="Foobar" >
+                        <ul class="list">
+                            <li><a href="#main" onclick="$.afui.clearHistory()">Главная</a></li>
+                            <li><h2>Расходы</h2></li>
+                            <li><a href="#education" onclick="$.afui.clearHistory()">Образование</a></li>
+                            <li><a href="#health" onclick="$.afui.clearHistory()">Здравохранение</a>
+                            <li><a href="#jkh" onclick="$.afui.clearHistory()">ЖКХ</a>
+                            </li>
+                            <li><h2>Доходы</h2></li>
+                            <li><a href="#ndfl" onclick="$.afui.clearHistory()">НДФЛ</a>
+                            </li>
+                            <li><a href="#usn" onclick="$.afui.clearHistory()">УСН</a>
+                            </li>
+                            <li><a href="#auto" onclick="$.afui.clearHistory()">Транспортный налог</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</body>
+
+</html>
