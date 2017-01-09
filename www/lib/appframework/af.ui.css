@@ -1808,9 +1808,9 @@ body #af_actionsheet a {
   text-shadow: none;
 }
 .view header {
-  background: #0088d1;
+  background: #0099cc;
   border: none;
-  border-bottom: 1px solid #0088d1;
+  border-bottom: 1px solid #0099cc;
   color: #ffffff;
 }
 .view header h1 {
@@ -3760,7 +3760,7 @@ p {
   z-index: 250;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  height: 44px;
+  height: 82px;
   left: 0;
   right: 0;
 }
@@ -4053,14 +4053,14 @@ header .menuButton {
   float: right;
 }
 header .menuButton:after {
-  border-bottom: 9px double white;
-  border-top: 3px solid white;
-  top: 9px;
-  left: 3px;
+  border-bottom: 15px double white;
+  border-top: 5px solid white;
+  top: 21px;
+  left: 6px;
   content: "";
-  height: 15px;
+  height: 25px;
   position: absolute;
-  width: 15px;
+  width: 50px;
 }
 
 .tizen,
