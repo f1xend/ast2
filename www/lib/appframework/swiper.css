@@ -201,13 +201,14 @@
 }
 button.swiper-pagination-bullet {
   border: none;
-  margin: 0;
+/*  margin: 0;*/
   padding: 0;
   box-shadow: none;
   -moz-appearance: none;
   -ms-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+  right: 0;
 }
 .swiper-pagination-clickable .swiper-pagination-bullet {
   cursor: pointer;
