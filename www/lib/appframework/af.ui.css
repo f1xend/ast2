@@ -3760,7 +3760,7 @@ p {
   z-index: 250;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  height: 82px;
+  height: 60px;
   left: 0;
   right: 0;
 }
@@ -3873,7 +3873,7 @@ p {
   top: 0px;
   left: 0px;
   display: none;
-  padding: 10px;
+/*  padding: 10px;*/
   padding-top: 0px;
   overflow-x: hidden;
   overflow-y: visible;
@@ -4055,7 +4055,7 @@ header .menuButton {
 header .menuButton:after {
   border-bottom: 15px double white;
   border-top: 5px solid white;
-  top: 21px;
+  top: 14px;
   left: 6px;
   content: "";
   height: 25px;
