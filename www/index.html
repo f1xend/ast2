@@ -58,12 +58,13 @@
             <div class="panel" id="main"  data-selected="true" style='background-color: #ECF0F1'>
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide slide1">slide1
 <!--            <img src="../slider1.jpg" alt="">-->
-            <img src='../www/main_1.jpg' style='width: 100%; height: 300px;'> 
+<!--            <img src='../www/main_1.jpg' style='width: 100%; height: 300px;'> -->
+<!--                <h2 class="nameSlide">НОВОСТИ: Министрество финансов в край а#*!!о</h1>-->
             </div>
-            <div class="swiper-slide">Slide 2
-             <img src='main_2.jpg' style='width: 100%; height: 300px;'> 
+            <div class="swiper-slide">
+             <img src='../slider1.jpg' style='width: 100%; height: 300px;'> 
             </div>
             <div class="swiper-slide">
                 <img src="../www/main_3.jpg" alt="">
@@ -81,6 +82,8 @@
         <!-- If we need scrollbar -->
 <!--        <div class="swiper-scrollbar"></div>-->
     </div>
+               
+               
 
                <div style='background-color: #FFFFFF' class="slider">
                     
@@ -345,14 +348,15 @@
     
     // If we need pagination
     pagination: '.swiper-pagination',
-    
+    paginationClickable: true,
     // Navigation arrows
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    
+    spaceBetween: 30,
+    effect: 'fade'
     // And if we need scrollbar
 //    scrollbar: '.swiper-scrollbar',
-  }) 
+  });
     </script>
 
 </body>

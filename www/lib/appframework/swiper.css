@@ -80,6 +80,12 @@
   height: 100%;
   position: relative;
 }
+
+
+.swiper-slide:after {
+    position: absolute;
+    content: "Новости"
+}
 /* Auto Height */
 .swiper-container-autoheight,
 .swiper-container-autoheight .swiper-slide {
@@ -167,7 +173,7 @@
 /* Pagination Styles */
 .swiper-pagination {
   position: absolute;
-  text-align: center;
+  text-align: right;
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
   -o-transition: 300ms;
@@ -186,7 +192,7 @@
 .swiper-pagination-custom,
 .swiper-container-horizontal > .swiper-pagination-bullets {
   bottom: 10px;
-  left: 0;
+  right: 0;
   width: 100%;
 }
 /* Bullets */
@@ -195,15 +201,16 @@
   height: 8px;
   display: inline-block;
   border-radius: 100%;
-  border-color: #fff
-  background: #000;
-  opacity: 0.2;
+/*  border-color: #fff;*/
+/*  border: 1px;*/
+  opacity: 0.5;
+
 }
 button.swiper-pagination-bullet {
-  border: none;
+/*  border: none;*/
 /*  margin: 0;*/
   padding: 0;
-  box-shadow: none;
+/*  box-shadow: none;*/
   -moz-appearance: none;
   -ms-appearance: none;
   -webkit-appearance: none;
@@ -214,13 +221,17 @@ button.swiper-pagination-bullet {
   cursor: pointer;
 }
 .swiper-pagination-white .swiper-pagination-bullet {
-  background: #fff;
+/*  background: #;*/
+/*    border: 1px;*/
+/*    border-color: #fff;*/
+    background: #fff
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
   background: #007aff;
 }
 .swiper-pagination-white .swiper-pagination-bullet-active {
+  opacity: 1;
   background: #fff;
 }
 .swiper-pagination-black .swiper-pagination-bullet-active {
@@ -574,4 +585,32 @@ button.swiper-pagination-bullet {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/*
+.slider {
+    position: relative;
+}
+
+.nameSlide {
+    position: absolute;
+    color: #fff;
+}
+*/
+*/
+*/
+
+.nameSlide {
+    position	: absolute;
+	top		: 200px;
+	left		: 0;
+	width		: 100%;
+    z-index: 10;
+}
+
+.slide1 {
+    background-image: url(../../main_1.jpg);
+    color: #000;
+    font-size: 40px;    
+    bottom: 0;
 }
