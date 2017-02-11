@@ -13,22 +13,28 @@
 
     <link rel="stylesheet" type="text/css" href="lib/appframework/icons.css" />
     <link rel="stylesheet" type="text/css" href="lib/appframework/af.ui.css" />
-    <link rel="stylesheet" type="text/css" href="lib/appframework/swiper.css" />
+<!--    <link rel="stylesheet" type="text/css" href="lib/appframework/swiper.min.css" />-->
     <link rel="stylesheet" type="text/css" href="lib/appframework/main.css" />
+    <link rel="stylesheet" type="text/css" href="lib/appframework/unslider.css">
     
 
-    <script type="text/javascript" charset="utf-8" src="lib/jquery.min.js"></script>
+<!--    <script type="text/javascript" charset="utf-8" src="lib/jquery.min.js"></script>-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="lib/fastclick.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/unslider.js"></script>
     <script type="text/javascript" charset="utf-8" src="lib/appframework/appframework.ui.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/www/lib/appframework/swiper.min.js"></script>
+<!--    <script type="text/javascript" charset="utf-8" src="/www/lib/appframework/swiper.min.js"></script>-->
+<!--    <script type="text/javascript" charset="utf-8" src="lib/appframework/swiper.js"></script>-->
+    
         
     <script src='cordova.js'></script>
         
-    <icon platform="android" src="pkg/android/icon-ldpi.png" density="ldpi" width="36" height="36" />
-    <icon platform="android" src="pkg/android/icon-mdpi.png" density="mdpi" width="48" height="48" />
-    <icon platform="android" src="pkg/android/icon-hdpi.png" density="hdpi" width="72" height="72" />
+    <icon platform="android" src="pkg/android/icon-ldpi.png"  density="ldpi" width="36" height="36" />
+    <icon platform="android" src="pkg/android/icon-mdpi.png"  density="mdpi" width="48" height="48" />
+    <icon platform="android" src="pkg/android/icon-hdpi.png"  density="hdpi" width="72" height="72" />
     <icon platform="android" src="pkg/android/icon-xhdpi.png" density="xhdpi" width="96" height="96" />
 
+    
     <style> 
       
     </style>
@@ -54,38 +60,41 @@
         
         
         <div class="pages">
-
             <div class="panel" id="main"  data-selected="true" style='background-color: #ECF0F1'>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slide1">
-                
-            <img src="../www/main_1.jpg" alt="">
-<!--            <img src='../www/main_1.jpg' style='width: 100%; height: 300px;'> -->
-<!--                <h2 class="nameSlide">НОВОСТИ: Министрество финансов в край а#*!!о</h1>-->
-               <div class="swiper-slide-text">
-                   <h2>Новости:</h2>
-               </div>
-            </div>
-            <div class="swiper-slide">
-             <img src='../slider1.jpg' style='width: 100%; height: 300px;'> 
-            </div>
-            <div class="swiper-slide">
-                <img src="../www/main_3.jpg" alt="">
-            </div>
-            <div class="swiper-slide">Slide 4</div>
-
-        </div>
-         
-       <div class="swiper-pagination swiper-pagination-white"></div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev swiper-button-white"></div>
-        <div class="swiper-button-next swiper-button-white"></div>
-        
-     
-        <!-- If we need scrollbar -->
-<!--        <div class="swiper-scrollbar"></div>-->
-    </div>
+<!--                <div class="swiper-container">-->
+<!--
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                        <div class="swiper-slide">Slide 10</div>
+-->
+                    <!--</div>-->
+                    <!-- Add Pagination -->
+<!--                    <div class="swiper-pagination swiper-pagination-white"></div>-->
+                    <!-- Add Arrows -->
+<!--
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+-->
+                <div class="banner">
+                    <ul>
+                        <li><img class="slide-responsive" src="slider1.jpg" alt=""></li>
+                        <li>Pretty cool, huh?</li>
+                    </ul>
+<!--
+                    <a class="unslider-arrow prev">Pr</a>
+                    <a class="unslider-arrow next">ne</a>
+-->
+                </div>
+<!--            </div>-->
                
                
 
@@ -93,7 +102,7 @@
                     
                     <div style='width: 100%;'>
                         <br><h1 style='color: #2C3E50;'>Сколько составляет размер бюджета</h1><br>
-                        <img src='../slider1.jpg' style='width: 100%; height: 300px;'>
+                        <img src='slider1.jpg' style='width: 100%; height: 300px;'>
                     <p style='color: #2C3E50; font-size: 16pt; line-height: 30px;'>
                     В 2015 году бюджет Астраханской области составляет 35 472,3 млн. рублей при расходах в 38 236,9 млн. рублей<br>
 
@@ -344,24 +353,33 @@
         </nav>
 
     </div>
+<!--
       <script>
-    var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-//    direction: 'vertical',
-    loop: true,
-    
-    // If we need pagination
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    // Navigation arrows
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-    spaceBetween: 30,
-    effect: 'fade'
-    // And if we need scrollbar
-//    scrollbar: '.swiper-scrollbar',
-  });
+var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
     </script>
+-->
+<script>
+//    $(function() { $('.banner').unslider() })
+        $(document).ready(function(){
+        $('.banner').unslider({
+        speed: 500,               //  The speed to animate each slide (in milliseconds)
+        delay: 3000,              //  The delay between slide animations (in milliseconds)
+        complete: function() {},  //  A function that gets called after every slide animation
+        keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+        dots: true,               //  Display dot navigation
+        fluid: true              //  Support responsive design. May break non-responsive designs
+            
+        });
+     });
+    </script>   
 
 </body>
 
