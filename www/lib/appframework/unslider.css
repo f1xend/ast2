@@ -1,6 +1,12 @@
-.unslider{overflow:auto;margin:0;padding:0}
+.unslider{
+/*    overflow:auto;*/
+    position: relative;
+    margin:0;padding:0}
 .unslider-wrap{position:relative}
-.unslider-wrap.unslider-carousel>li{float:left}
+.unslider-wrap.unslider-carousel>li{
+    position: relative;
+    float:left;
+}
 .unslider-vertical>ul{height:100%}
 .unslider-vertical li{float:none;width:100%}
 .unslider-fade{position:relative}

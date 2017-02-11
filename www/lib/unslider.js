@@ -234,7 +234,7 @@
 
 		//  Set up our navigation
 		self.initNav = function() {
-			var $nav = $('<nav class="' + self.prefix + 'nav"><ol /></nav>');
+			var $nav = $('<span class="' + self.prefix + 'nav"><ol /></span>');
 
 			//  Build our click navigation item-by-item
 			self.$slides.each(function(key) {
