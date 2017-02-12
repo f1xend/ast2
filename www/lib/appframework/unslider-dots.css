@@ -2,7 +2,6 @@
     font-family: PragmaticaLightC;
     src: url(../fonts/PragmaticaLightC.otf)
 }
-
 /**
  *   Here's where everything gets included. You don't need
  *   to change anything here, and doing so might break
@@ -32,14 +31,14 @@
 }
 .unslider-nav ol li {
   display: inline-block;
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   margin: 0 4px;
   background: transparent;
-  border-radius: 5px;
+  border-radius: 6px;
   overflow: hidden;
   text-indent: -999em;
-  border: 0.18em solid #fff;
+  border: 2px solid #fff;
   cursor: pointer;
 /*    bottom: 20px;*/
     right: 0;
@@ -62,13 +61,14 @@
     text-align: left;
 */
     margin-left: 24px;
+    margin-bottom: 10px;
     width: 66.66666666666667%;
 }
 
 .textSlide {
     font-family: PragmaticaLightC;
     color:  #ffffff;
-    font-size: 36px; Приближение из-за подстановки шрифтов 
+    font-size: 30px; Приближение из-за подстановки шрифтов 
     font-weight: 400;
     text-align: left;
     line-height: 1;
