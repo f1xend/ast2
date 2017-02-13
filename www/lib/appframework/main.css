@@ -100,4 +100,38 @@ body {
     display: inline-block;
 }
 
+.menuButton span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 0px;
+  margin: 15% auto;
+/*    margin-left: 400px;*/
+  -webkit-transition: all .3s ease, -webkit-transform .2s ease;
+          transition: all .3s ease, transform .2s ease;
+  background: -webkit-linear-gradient(top, transparent 0%, transparent 20%, #fff 20%, #fff 23%, transparent 23%, transparent 48%, #fff 48%, #fff 50%, transparent 47%, transparent 76%, #fff 76%, #fff 78%, transparent 78%), -webkit-linear-gradient(transparent, transparent);
+  background: linear-gradient(to bottom, transparent 0%, transparent 20%, #fff 20%, #fff 23%, transparent 23%, transparent 48%, #fff 48%, #fff 50%, transparent 47%, transparent 76%, #fff 76%, #fff 78%, transparent 78%), linear-gradient(transparent, transparent);
+   -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+span:active,  {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+span.clicked {
+  background: -webkit-linear-gradient(135deg, transparent 0%, transparent 48%, #fff 49%, #fff 51%, transparent 51%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 48%, #fff 49%, #fff 51%, transparent 51%, transparent 100%);
+  background: linear-gradient(-45deg, transparent 0%, transparent 48%, #fff 49%, #fff 51%, transparent 51%, transparent 100%), linear-gradient(45deg, transparent 0%, transparent 48%, #fff 49%, #fff 51%, transparent 51%, transparent 100%);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+span.clicked:active, span.clicked:hover {
+  -webkit-transform: scale(0.9) rotate(180deg);
+      -ms-transform: scale(0.9) rotate(180deg);
+          transform: scale(0.9) rotate(180deg);
+}
+
 
